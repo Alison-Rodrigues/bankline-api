@@ -1,4 +1,4 @@
-package diosantander.banklineapi;
+package diosantanderbankline.banklineapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
