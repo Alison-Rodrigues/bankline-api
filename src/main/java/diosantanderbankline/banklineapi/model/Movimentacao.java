@@ -28,9 +28,20 @@ public class Movimentacao {
 	@Column
 	private Double valor;
 	
+	@Column
+	private Integer id_conta;
+	
 	//@Enumerated salva o próprio valor literal RECEITA ou DESPESA indicado em MovimentacaoTipo
 	@Enumerated(EnumType.STRING)
 	private MovimentacaoTipo tipo;
+	
+	public Integer getId_conta() {
+		return id_conta;
+	}
+	
+	public void setId_conta(Integer id_conta) {
+		this.id_conta = id_conta;
+	}
 	
 	public Integer getId() {
 		return id;
