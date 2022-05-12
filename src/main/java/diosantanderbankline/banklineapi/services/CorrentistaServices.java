@@ -10,9 +10,8 @@ import diosantanderbankline.banklineapi.model.Conta;
 import diosantanderbankline.banklineapi.model.Correntista;
 import diosantanderbankline.banklineapi.repository.CorrentistaRepository;
 
-//Service é a camada de toda a regra de negócio da aplicacao
-//Vai ser um componente do tipo service @Service
-//Set determina e o get recebe a informação
+
+//camada de servicoes da aplicação
 @Service
 public class CorrentistaServices {
 	@Autowired

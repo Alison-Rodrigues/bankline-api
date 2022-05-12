@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 
 import diosantanderbankline.banklineapi.model.MovimentacaoTipo;
 
+//criação de novas movimentações
 public class MovimentacaoDto {
 	private LocalDateTime dataHora;
 	private String descricao;
@@ -11,6 +12,7 @@ public class MovimentacaoDto {
 	private Integer id_conta;
 	private MovimentacaoTipo tipo;
 	
+	//getters and setters 
 	public LocalDateTime getDataHora() {
 		return dataHora;
 	}

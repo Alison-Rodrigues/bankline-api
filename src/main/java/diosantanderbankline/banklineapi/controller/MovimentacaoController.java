@@ -1,6 +1,7 @@
 package diosantanderbankline.banklineapi.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -28,16 +29,25 @@ public class MovimentacaoController {
 	@Autowired
 	private MovimentacaoService movimentacaoService;
 	
+	//retorna todas as movimentacões
 	@GetMapping
 	public List<Movimentacao> findAll() {
 		return movimentacaoRepository.findAll();
 	}
 	
+	//retorna uma movimentacao a partir do id
+	@GetMapping("/{id}")
+	public Optional<Movimentacao> findById(@PathVariable Integer id) {
+		return movimentacaoRepository.findById(id);
+	}
+	
+	//cria uma noma movimentação
 	@PostMapping
 	public void save(@RequestBody MovimentacaoDto movimentacaoDto) {
 		movimentacaoService.save(movimentacaoDto);
 	}
 	
+	//deleta uma movimentacao a partir de um id
 	@DeleteMapping("/{id}")
 	public ResponseEntity<Void> delete(@PathVariable Integer id) {
 		movimentacaoService.deleleById(id);
