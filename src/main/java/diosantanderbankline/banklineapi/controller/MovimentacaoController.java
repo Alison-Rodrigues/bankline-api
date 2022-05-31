@@ -20,7 +20,7 @@ import diosantanderbankline.banklineapi.repository.MovimentacaoRepository;
 import diosantanderbankline.banklineapi.services.MovimentacaoService;
 
 @RestController
-@RequestMapping("/movimentacao")
+@RequestMapping("/movimentacoes")
 public class MovimentacaoController {
 	
 	@Autowired

@@ -1,24 +1,16 @@
 package diosantanderbankline.banklineapi.dtos;
 
-import java.time.LocalDateTime;
 
 import diosantanderbankline.banklineapi.model.MovimentacaoTipo;
 
 //criação de novas movimentações
 public class MovimentacaoDto {
-	private LocalDateTime dataHora;
 	private String descricao;
 	private Double valor;
 	private Integer id_conta;
 	private MovimentacaoTipo tipo;
 	
 	//getters and setters 
-	public LocalDateTime getDataHora() {
-		return dataHora;
-	}
-	public void setDataHora(LocalDateTime dataHora) {
-		this.dataHora = dataHora;
-	}
 	public String getDescricao() {
 		return descricao;
 	}
