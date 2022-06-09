@@ -1,7 +1,6 @@
 package diosantanderbankline.banklineapi.controller;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -35,11 +34,6 @@ public class MovimentacaoController {
 		return movimentacaoRepository.findAll();
 	}
 	
-	//retorna uma movimentacao a partir do id
-	@GetMapping("/{id}")
-	public Optional<Movimentacao> findById(@PathVariable Integer id) {
-		return movimentacaoRepository.findById(id);
-	}
 	
 	//cria uma noma movimentação
 	@PostMapping
